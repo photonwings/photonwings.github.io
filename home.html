@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Marck+Script&family=Rubik+Glitch&display=swap"
+      rel="stylesheet">
+    <title>Home</title>
+    <style>
+      html,
+      body {
+        margin: 0px;
+        height: 95%;
+        /* background: rgba(0, 0, 0, 0.5); */
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      a :hover {
+        color: rgba(255, 255, 255, 0.562);
+      }
+
+      .my-container {
+        color: white;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .my-card {
+        color: black;
+        background-color: white;
+        /* background: rgba(255, 255, 255, 0.5); */
+
+        /* background: linear-gradient(-45deg, rgb(119, 119, 119), rgb(255, 255, 255)); */
+        padding: 30px;
+        width: 750px;
+        height: 450px;
+        border-radius: 30px;
+      }
+
+      .type-container {
+        display: inline-block;
+      }
+
+      .type {
+        font-family: 'Marck Script', cursive;
+        padding: 10px;
+        font-weight: bold;
+        overflow: hidden;
+        border-right: .15em solid black;
+        white-space: nowrap;
+        animation:
+          typing 2s forwards,
+          blink .75s infinite;
+        font-size: 40px;
+        width: 0;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0
+        }
+
+        to {
+          width: 100%
+        }
+      }
+
+      @keyframes blink {
+        from {
+          border-color: transparent
+        }
+
+        to {
+          border-color: black;
+        }
+      }
+
+      #home {
+        position: absolute;
+        top: 200px;
+        left: 50px;
+      }
+
+      #about {
+        position: absolute;
+        top: 458px;
+        left: 200px;
+
+      }
+
+      #skills {
+        position: absolute;
+        top: 600px;
+        left: 1500px;
+
+      }
+
+      #project {
+        position: absolute;
+        top: 800px;
+        left: 100px;
+      }
+
+      #education {
+        position: absolute;
+        top: 280px;
+        left: 1580px;
+      }
+
+      #statistics {
+        position: absolute;
+        top: 850px;
+        left: 1100px;
+      }
+
+      #contact {
+        position: absolute;
+        top: 100px;
+        left: 800px;
+      }
+
+      #home:hover,
+      #about:hover,
+      #skills:hover,
+      #project:hover,
+      #education:hover,
+      #statistics:hover,
+      #contact:hover {
+        animation-name: shake;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        transform-origin: 50% 100%;
+        font-size: 60px;
+        transition: font-size 0.5s ease-in-out;
+      }
+
+      @keyframes shake {
+        0% {
+          transform: translate(2px, 1px) rotate(0deg);
+        }
+
+        10% {
+          transform: translate(-1px, -2px) rotate(-2deg);
+        }
+
+        20% {
+          transform: translate(-3px, 0px) rotate(3deg);
+        }
+
+        30% {
+          transform: translate(0px, 2px) rotate(0deg);
+        }
+
+        40% {
+          transform: translate(1px, -1px) rotate(1deg);
+        }
+
+        50% {
+          transform: translate(-1px, 2px) rotate(-1deg);
+        }
+
+        60% {
+          transform: translate(-3px, 1px) rotate(0deg);
+        }
+
+        70% {
+          transform: translate(2px, 1px) rotate(-2deg);
+        }
+
+        80% {
+          transform: translate(-1px, -1px) rotate(4deg);
+        }
+
+        90% {
+          transform: translate(2px, 2px) rotate(0deg);
+        }
+
+        100% {
+          transform: translate(1px, -2px) rotate(-1deg);
+        }
+      }
+
+      .text-style {
+        font-family: 'Rubik Glitch', cursive;
+        font-size: 50px;
+      }
+
+      @media (max-width: 1900px) {
+
+        #home,
+        #about,
+        #skills,
+        #project,
+        #education,
+        #statistics,
+        #contact {
+          display: none;
+        }
+      }
+
+      #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="container-fluid d-block d-xl-none">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="./home.html"><img class="rounded-circle" src="./assets/wings.jpg" width="50px"
+              height="50px"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./skills.html">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./project.html">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./education.html">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./stats.html">Statistics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+       
+        <video autoplay muted loop id="myVideo" style="">
+      <source src="./assets/blackandblack.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="my-container">
+      <div class="my-card">
+        <h3 style="color: gray;">Hello.. My name is</h3>
+        <h1 class="display-4" style="font-family: 'Black Ops One', cursive;">VAIBHAVA HATHWAR</h1>
+        <h4 style="color: gray;">And I'm a </h4>
+        <div class="type-container">
+          <div class="type">&emsp; &emsp; &emsp; Student</div>
+        </div>
+        <br>
+        <div class="type-container">
+          <div class="type">&emsp; &emsp; &emsp; Web Developer</div>
+        </div>
+        <br>
+        <div class="type-container">
+          <div class="type">&emsp; &emsp; &emsp; Tech Enthusiast</div>
+        </div>
+      </div>
+      <a href="./home.html">
+        <span class="text-style" id="home">Home</span>
+      </a>
+      <a href="./about.html">
+        <span class="text-style" id="about">About</span>
+      </a>
+      <a href="./skills.html">
+        <span class="text-style" id="skills">Skills</span>
+      </a>
+      <a href="./project.html">
+        <span class="text-style" id="project">Project</span>
+      </a>
+      <a href="./education.html">
+        <span class="text-style" id="education">Education</span>
+      </a>
+      <a href="./stats.html">
+        <span class="text-style" id="statistics">Statistics</span>
+      </a>
+      <a href="./contact.html">
+        <span class="text-style" id="contact">Contact</span>
+      </a>
+    </div>
+
+    <script>
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"></script>
+      <script>
+        document.getElementById("myVideo").playbackRate = 0.5;
+      </script>
+  </body>
+
+</html>
