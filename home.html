@@ -47,8 +47,8 @@
 
         /* background: linear-gradient(-45deg, rgb(119, 119, 119), rgb(255, 255, 255)); */
         padding: 30px;
-        width: 750px;
-        height: 450px;
+        width: 43em;
+        height: 30em;
         border-radius: 30px;
       }
 
@@ -92,46 +92,53 @@
 
       #home {
         position: absolute;
-        top: 200px;
-        left: 50px;
+        top: 10%;
+        left: 8%;
+        /* z-index: -1; */
       }
 
       #about {
         position: absolute;
-        top: 458px;
-        left: 200px;
+        top: 46%;
+        left: 13%;
+        /* z-index: -1; */
 
       }
 
       #skills {
         position: absolute;
-        top: 600px;
-        left: 1500px;
+        top: 67%;
+        left: 88%;
+        /* z-index: -1; */
 
       }
 
       #project {
         position: absolute;
-        top: 800px;
-        left: 100px;
+        top: 77%;
+        left: 5%;
+        /* z-index: -1; */
       }
 
       #education {
         position: absolute;
-        top: 280px;
-        left: 1580px;
+        top: 26%;
+        left: 80%;
+        /* z-index: -1; */
       }
 
       #statistics {
         position: absolute;
-        top: 850px;
-        left: 1100px;
+        top: 88%;
+        /* z-index: -1; */
+        left: 47%
       }
 
       #contact {
         position: absolute;
-        top: 100px;
-        left: 800px;
+        top: 12%;
+        left: 40%;
+        /* z-index: -1; */
       }
 
       #home:hover,
@@ -201,7 +208,7 @@
         font-size: 50px;
       }
 
-      @media (max-width: 1900px) {
+      /* @media (max-width: 100vw) {
 
         #home,
         #about,
@@ -212,7 +219,7 @@
         #contact {
           display: none;
         }
-      }
+      } */
 
       #myVideo {
         position: fixed;
@@ -220,7 +227,10 @@
         bottom: 0;
         min-width: 100%;
         min-height: 100%;
-        z-index: -1;
+        z-index: -10;
+      }
+      .navbar {
+        background-color: transparent();
       }
     </style>
 
@@ -228,8 +238,8 @@
 
   <body>
     <header>
-      <div class="container-fluid d-block d-xl-none">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid d-block">
+        <nav class="navbar navbar-expand-lg navbar-dark">
           <a class="navbar-brand" href="./home.html"><img class="rounded-circle" src="./assets/wings.jpg" width="50px"
               height="50px"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -264,8 +274,8 @@
         </nav>
       </div>
     </header>
-       
-        <video autoplay muted loop id="myVideo" style="">
+
+    <video autoplay muted loop id="myVideo" style="">
       <source src="./assets/blackandblack.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
@@ -318,9 +328,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"></script>
-      <script>
-        document.getElementById("myVideo").playbackRate = 0.5;
-      </script>
+    <script>
+      document.getElementById("myVideo").playbackRate = 0.5;
+    </script>
   </body>
 
 </html>

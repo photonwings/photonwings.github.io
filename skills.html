@@ -175,7 +175,7 @@
           current_progress += 1;
           document.getElementById(className.substring(1) + "-per").innerHTML = current_progress + " %";
           $(className)
-            .css("width", current_progress + "%")
+            .css("width", current_progress + "%");
           if (current_progress >= percentage)
             clearInterval(interval);
         }, 50);
