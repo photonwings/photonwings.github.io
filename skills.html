@@ -30,7 +30,7 @@
   <body>
     <header>
       <div class="">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg ">
           <a class="navbar-brand" href="./home.html"><img class="rounded-circle" src="./assets/wings.jpg" width="50px"
               height="50px"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -53,9 +53,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./education.html">Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./stats.html">Statistics</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./contact.html">Contact</a>
@@ -115,16 +112,30 @@
       </div>
       <div class="row align-items-center pt-4 pb-4">
         <div class="col-2 d-flex justify-content-center">
-          <i class="fa-brands fa-python fa-4x"></i>
+          <i class="fa-brands fa-react fa-4x"></i>
         </div>
         <div class="col-8">
           <div class="progress" style="height: 25px" ;>
-            <div class="python progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
-              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+            <div class="react progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
+              aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
           </div>
         </div>
         <div class="col-2 text-center">
-          <span id="python-per" class="font-weight-bold">0%</span>
+          <span id="react-per" class="font-weight-bold">0%</span>
+        </div>
+      </div>
+      <div class="row align-items-center pt-4 pb-4">
+        <div class="col-2 d-flex justify-content-center">
+          <i class="fa-brands fa-ethereum fa-4x"></i>
+        </div>
+        <div class="col-8">
+          <div class="progress" style="height: 25px" ;>
+            <div class="ethereum progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
+              aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+          </div>
+        </div>
+        <div class="col-2 text-center">
+          <span id="ethereum-per" class="font-weight-bold">0%</span>
         </div>
       </div>
       <div class="row align-items-center pt-4 pb-4">
@@ -141,20 +152,6 @@
           <span id="git-per" class="font-weight-bold">0%</span>
         </div>
       </div>
-      <div class="row align-items-center pt-4 pb-4">
-        <div class="col-2 d-flex justify-content-center">
-          <i class="fa-brands fa-java fa-4x"></i>
-        </div>
-        <div class="col-8">
-          <div class="progress" style="height: 25px" ;>
-            <div class="java progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
-              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
-          </div>
-        </div>
-        <div class="col-2 text-center">
-          <span id="java-per" class="font-weight-bold">0%</span>
-        </div>
-      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -166,9 +163,9 @@
       dynamicProgress(".html", 75);
       dynamicProgress(".css", 30);
       dynamicProgress(".js", 35);
-      dynamicProgress(".python", 65);
-      dynamicProgress(".git", 55);
-      dynamicProgress(".java", 40);
+      dynamicProgress(".react", 15);
+      dynamicProgress(".ethereum", 10);
+      dynamicProgress(".git", 40);
       function dynamicProgress(className, percentage) {
         var current_progress = 0;
         var interval = setInterval(function () {
